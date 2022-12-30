@@ -1,15 +1,38 @@
 $myFont: Helvetica, sans-serif;
-$myColor: red;
-$myFontSize: 18px;
+$myColor: salmon;
+$myFontSize: 20px;
 $myWidth: 680px;
 
+body {
+    text-align: center;
+    margin: 0;
+    background-color: antiquewhite;
+    color: black;
+    font-size: $myFontSize;
+    font-family: $myFont;
+}
+
 h1 {
-  font-family: $myFont;
-  font-size: $myFontSize;
   color: $myColor;
 }
 
+a {
+    text-decoration: none;
+    color: $myColor;
+}
+
+a:hover {
+    color: white;
+}
+
 button {
-    color: blue;
+    background-color: blue;
+    color: white;
+    border-radius: 6px 6px 6px;
+    font-size: $myFontSize;
+}
+
+button:hover {
+    background-color: $myColor;
 }
 
