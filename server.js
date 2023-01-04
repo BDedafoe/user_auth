@@ -37,6 +37,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('/', checkAuthenticated, (req, res) => {
     res.render('index.ejs', { name: req.user.name })
   })
+
+  app.get('/new', checkAuthenticated, (req, res) => {
+    res.render('new.ejs')
+  })
   
   app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
@@ -70,7 +74,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.delete('/logout', (req, res) => {
     req.logout(req.user, err => {
         if(err) return next(err);
-        res.redirect("/login");
+        res.redirect('/login');
       });
   });
   

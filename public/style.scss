@@ -1,7 +1,6 @@
 $myFont: Helvetica, sans-serif;
 $myColor: salmon;
 $myFontSize: 20px;
-$myWidth: 680px;
 
 body {
     text-align: center;
@@ -22,17 +21,27 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: blue;
 }
 
 button {
     background-color: blue;
     color: white;
     border-radius: 6px 6px 6px;
+    border-color: white;
+    border-width: 5px;
     font-size: $myFontSize;
 }
 
 button:hover {
     background-color: $myColor;
+    border-color: white;
 }
 
+#password {
+    padding-left: 37px;
+}
+
+form {
+    padding-bottom: 30px;
+}

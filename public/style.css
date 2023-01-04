@@ -17,18 +17,29 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: blue;
 }
 
 button {
   background-color: blue;
   color: white;
   border-radius: 6px 6px 6px;
+  border-color: white;
+  border-width: 5px;
   font-size: 20px;
 }
 
 button:hover {
   background-color: salmon;
+  border-color: white;
+}
+
+#password {
+  padding-left: 37px;
+}
+
+form {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
