@@ -34,8 +34,12 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(methodOverride('_method'))
   app.use(express.static(path.join(__dirname, 'public')))
 
-  app.get('/', checkAuthenticated, (req, res) => {
-    res.render('index.ejs', { name: req.user.name })
+  app.get('/', (req, res) => {
+    res.render('index.ejs')
+  })
+
+  app.get('/home', checkAuthenticated, (req, res) => {
+    res.render('home.ejs', { name: req.user.name })
   })
 
   app.get('/new', checkAuthenticated, (req, res) => {
@@ -47,7 +51,7 @@ if (process.env.NODE_ENV !== 'production') {
   })
   
   app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
-    successRedirect: '/',
+    successRedirect: '/home',
     failureRedirect: '/login',
     failureFlash: true
   }))
@@ -88,7 +92,7 @@ if (process.env.NODE_ENV !== 'production') {
   
   function checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
-      return res.redirect('/')
+      return res.redirect('/home')
     }
     next()
   }
