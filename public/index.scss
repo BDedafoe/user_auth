@@ -1,0 +1,22 @@
+@import 'style.scss';
+
+body {
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+    background-image: url('/images/indexBackground.jpg');
+    background-repeat: no-repeat;
+    font-size: 20px;
+
+}
+
+h1 {
+    color: $primary_1;
+    text-shadow: 2px 2px 2px $primary_4;
+}
+
+h2 {
+    color: $primary_3;
+    text-shadow: 2px 2px 2px $primary_4;
+}
+

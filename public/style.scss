@@ -1,27 +1,34 @@
 $myFont: Helvetica, sans-serif;
-$myColor: salmon;
+$primary_1: #253132;
+$primary_2: #ffb86c;
+$primary_3: #106cad;
+$primary_4: #fdf0ce;
 $myFontSize: 20px;
 
 body {
     text-align: center;
     margin: 0;
-    background-color: antiquewhite;
+    background-color: dodgerblue;
     color: black;
     font-size: $myFontSize;
     font-family: $myFont;
 }
 
 h1 {
-  color: $myColor;
+  color: $primary_1;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color: $myColor;
+    color: $primary_3;
 }
 
 a:hover {
-    color: blue;
+    color: $primary_2;
 }
 
 button {
@@ -34,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: $myColor;
+    background-color: $primary_1;
     border-color: white;
 }
 

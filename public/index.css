@@ -46,4 +46,21 @@ form {
   padding-bottom: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+  background-image: url("/images/indexBackground.jpg");
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+h1 {
+  color: #253132;
+  text-shadow: 2px 2px 2px #fdf0ce;
+}
+
+h2 {
+  color: #106cad;
+  text-shadow: 2px 2px 2px #fdf0ce;
+}/*# sourceMappingURL=index.css.map */
